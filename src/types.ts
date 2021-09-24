@@ -96,7 +96,7 @@ export abstract class ProductSpecs {
 }
 
 /**
- * Refresco
+ * Control quality on drinks production lines
  */
 
 export class PurJusSpecs extends ProductSpecs {
