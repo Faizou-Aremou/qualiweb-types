@@ -1,7 +1,7 @@
 /**
- * geeting
+ * greeting
  */
 
-export abstract class Greeting {
+export class Greeting {
     
 }
