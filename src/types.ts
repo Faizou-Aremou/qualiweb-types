@@ -1,5 +1,5 @@
 /**
- * implementation of control plan
+ * type control plan
  */
 
 export abstract class ControlPlan {

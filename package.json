@@ -1,7 +1,7 @@
 {
-    "name": "etudes-des-types-du-projet",
+    "name": "jarvis-type",
     "version": "1.0.0",
-    "description": "type of qualiweb",
+    "description": "types used for jarvis conception",
     "main": "index.js",
     "scripts": {
         "test": "jasmine-ts --config=jasmine.json",
