@@ -1,7 +1,0 @@
-/**
- * greeting
- */
-
-export class Greeting {
-    
-}
