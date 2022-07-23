@@ -1,7 +1,8 @@
-import { Analysis } from "./analysis";
+import { QualityCriteria } from "./quality-criteria";
 
 export interface ControlQuality {
+  qualityCriteria:QualityCriteria;
   getNumberOfControl():number;
-  getControls(): Array<Analysis>;
-  addMeasure(analysis:Analysis, date:Date):void;
+  getControls(): Array<QualityCriteria>;
+  addMeasure(qualityCriteria:QualityCriteria, date:Date):void;
 }

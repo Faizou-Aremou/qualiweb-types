@@ -1,13 +1,13 @@
-import { Analysis } from "src/quality-controls-entity/analysis";
+
 import { AnalysisName } from "src/quality-controls-entity/analysis-name.enum";
 import { AnalysisType } from "src/quality-controls-entity/analysis-type.enum";
+import { ObjectiveCriteria } from "src/quality-controls-entity/objective-criteria";
 
-export class ViscosityAnalysis implements Analysis{
+export class ViscosityAnalysis implements ObjectiveCriteria{
+    nominalValue: number=8;
+    lowToleranceThreshold: number=6;
+    highToleranceThreshold: number=8;
     name: AnalysisName=AnalysisName.Viscosity;
     type: AnalysisType=AnalysisType.Physical;
-    nominalValue: string | number=12;
-    lowToleranceThreshold: string | number=8;
-    highToleranceThreshold: string | number=15;
-
 
 }
