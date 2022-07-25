@@ -3,13 +3,13 @@ import { Designation } from "./designation";
 import { Packaging } from "./packaging";
 import { Price } from "./price";
 import { ProductStorage } from "./product-storage";
-import { ProductionMethod } from "./production-method";
+import { Process } from "./production-method";
 
 export interface Product {
     designation:Designation;
     brandName: Designation,
     reference: Code;
-    productionMethod: ProductionMethod;
+    process: Process;
     packaging: Packaging;
     cost: Price;
     storage: ProductStorage;

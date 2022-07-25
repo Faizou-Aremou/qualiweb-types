@@ -1,8 +1,9 @@
-import { QualityCriteria } from "./quality-criteria";
+import { AttributeControlCard } from "./attribute-control-card";
+import { Frequency } from "./frequency";
+import { MeasurementControlCard } from "./measurements-control-card";
+import { QualityCharacteristic } from "./quality-criteria";
 
 export interface ControlQuality {
-  qualityCriteria:QualityCriteria;
-  getNumberOfControl():number;
-  getControls(): Array<QualityCriteria>;
-  addMeasure(qualityCriteria:QualityCriteria, date:Date):void;
+  qualityCriteria: QualityCharacteristic;
+  controlCard: AttributeControlCard | MeasurementControlCard;
 }

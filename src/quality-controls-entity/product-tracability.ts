@@ -4,12 +4,11 @@ import { Product } from "./product";
 import { ProductionLine } from "./production-line";
 
 export interface ProductTracability {
-
     product:Product;
     productionline: ProductionLine,
     operators: Array<Operator>, 
     lot: Code, 
-    ProductionOrder: Code ,
+    ProductionOrder: Code,
 
     addOperator(
         operator: Operator,
