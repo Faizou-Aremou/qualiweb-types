@@ -1,4 +1,4 @@
-import { Code } from "./code";
+import { Code, createCode } from "./code";
 import { Operator } from "./operator";
 import { Product } from "./product";
 import { ProductionLine } from "./production-line";
@@ -15,3 +15,6 @@ export interface ProductTracability {
         operators: Array<Operator>
     ): Array<Operator>
 }
+
+
+
