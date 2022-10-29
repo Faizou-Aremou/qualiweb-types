@@ -1,1 +1,0 @@
-export type AttributeControlCard = string //TODO: will be change

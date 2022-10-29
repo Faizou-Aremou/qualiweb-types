@@ -1,0 +1,1 @@
+export type Minute = number & {__brand:"Minute"};
