@@ -1,5 +1,5 @@
 import { Minute } from "src/utils/minutes.util";
-import { QualityControlPlan } from "./quality-control-plan.value.object";
+import { QualityControlPlan } from "./quality-control-plan";
 
 export type QualityControlOfTheProductionStage = {
     readonly optimalControlTimeFrequency: Minute;

@@ -3,8 +3,8 @@ import { Operator } from "./operator.entity";
 
 export type Sample = {
   readonly id: Uid;
-  readonly sampleSize: SamplesSize;
+  readonly sampleSize: SampleSize;
   readonly operator: Operator;
 };
 
-export type SamplesSize = number & { __brand: "NumberOfSamples" };
+export type SampleSize = number & { __brand: "SampleSize" };
