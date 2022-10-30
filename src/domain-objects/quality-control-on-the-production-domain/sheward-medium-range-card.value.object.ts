@@ -1,6 +1,6 @@
-import { SampleMeasure } from "./sample-measure.value.object";
 import { ControlCardLimit } from "./control-card.value.object";
+import { SampleMeasures } from "./sample-measures.value.object";
 
 export type ShewardMediumRangeCard = ControlCardLimit & {
-    sampleMeasures: SampleMeasure[];
+   readonly measures: SampleMeasures;
 }

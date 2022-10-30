@@ -1,3 +1,3 @@
 import { QualityControl } from "./control-quality.value.object";
 
-export type QualityControlList = ReadonlyArray<QualityControl>
+export type QualityControlList = ReadonlyArray<QualityControl>;

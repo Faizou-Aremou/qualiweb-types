@@ -1,6 +1,6 @@
 export type SampleMeasure = {
    readonly date: Date;
-   readonly measureOnTheSample:number[];
+   readonly measures:ReadonlyArray<number>;
    readonly average:number;
    readonly standardDeviation:number
 }
