@@ -4,10 +4,12 @@ import { QualityControlsCompleted, QualityControls } from "./quality-control-lis
 
 
 export type QualityControlPlan = {
+  readonly id: Uid;
   readonly productionStage: ProductionStage;
   readonly controls: QualityControls;
 };
 export type QualityControlPlans = ReadonlyArray<QualityControlPlan>;
+export type QualityControlPlansCompleted = ReadonlyArray<QualityControlPlanCompleted>;
 export type QualityControlPlanCompleted = {
   readonly id: Uid;
   readonly productionStage: ProductionStage;

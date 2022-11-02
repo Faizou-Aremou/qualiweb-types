@@ -1,0 +1,1 @@
+# Quality control application for soft drinks, designed with functional DDD
