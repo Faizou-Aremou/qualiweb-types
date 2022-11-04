@@ -1,6 +1,6 @@
 import { Uid } from "src/utils/uid.util";
-import { ProductTracability } from "./product-tracability.value.object";
-import { QualityControlsCompleted, QualityControls } from "./quality-control-list.value.object";
+import { ProductTracability } from "../value-objects/product-tracability.value.object";
+import { QualityControlsCompleted, QualityControls } from "../value-objects/quality-control-list.value.object";
 
 
 export type QualityControlPlan = {

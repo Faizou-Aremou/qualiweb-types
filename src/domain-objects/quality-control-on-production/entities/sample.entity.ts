@@ -1,4 +1,4 @@
-import { Uid } from "../../utils/uid.util";
+import { Uid } from "../../../utils/uid.util";
 import { Operator } from "./operator.entity";
 
 export type Sample = {

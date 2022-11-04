@@ -1,5 +1,5 @@
-import { Code } from "../../utils/code.util";
-import { Designation } from "../../utils/designation.util";
+import { Code } from "../../../utils/code.util";
+import { Designation } from "../../../utils/designation.util";
 import { QualityControlPlans } from "./quality-control-plan.entities";
 
 export type Product = {

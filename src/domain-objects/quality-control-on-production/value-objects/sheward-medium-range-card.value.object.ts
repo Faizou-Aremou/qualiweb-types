@@ -1,6 +1,6 @@
 import { ControlCardLimit } from "./control-card.value.object";
 import { SampleMeasures } from "./sample-measures.value.object";
-import { Sample } from "./sample.entity";
+import { Sample } from "../entities/sample.entity";
 
 export type ShewardMediumRangeCard = ControlCardLimit
 

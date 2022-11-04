@@ -1,4 +1,4 @@
-import { QualityControlPlanCompleted } from "./quality-control-plan.entities";
+import { QualityControlPlanCompleted } from "../entities/quality-control-plan.entities";
 
 
 

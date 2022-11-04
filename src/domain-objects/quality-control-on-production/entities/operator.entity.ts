@@ -1,4 +1,4 @@
-import { Uid } from "../../utils/uid.util";
+import { Uid } from "../../../utils/uid.util";
 
 export type Operator = {
   readonly id: Uid;
