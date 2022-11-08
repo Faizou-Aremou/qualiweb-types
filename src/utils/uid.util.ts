@@ -1,1 +1,0 @@
-export type Uid = number & {__brand:"Uid"};
