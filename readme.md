@@ -1,8 +1,5 @@
-# Quality control application for soft drinks, designed with functional DDD
 
-
-## Documentation
-
+<span style="color:#FF0000">Evènements métier</span>
 ![](readme-img/drinks_quality_app_event_storming0.png)
 
 <span style="color:#000000"> _Contrôle Qualité sur produit en cours de production: Contrôle du remplissage_ </span>
@@ -51,11 +48,20 @@
 
 <span style="color:#FF0000">Process: Contrôle d’une étape de production </span>
 
+<span style="color:#980000">Domains: Invariants</span>
+
+<span style="color:#FF0000">Process: Contrôle d’une étape de production </span>
+
 <span style="color:#FF0000">Workflow: Entrer séquentiellement chaque résultat de control suivant le plan de contrôle</span>
 
-<span style="color:#980000">Business rules \(integrity\)</span>
+<span style="color:#980000">Domain: Business rules \(integrity\)</span>
 
 <span style="color:#000000">Pour chaque contrôle du plan de contrôle\, tous les éléments de l'échantillon doivent être analysés et les résultats enregistrés</span>
 
+<span style="color:#980000">Domain: Consistency</span>
+
 <span style="color:#FF0000">Process: Contrôle d’une étape de production </span>
+<span style="color:#FF0000">Workflow: Entrer séquentiellement chaque résultat de control suivant le plan de contrôle</span>
+
+![](readme-img/drinks_quality_app_event_storming12.png)
 
