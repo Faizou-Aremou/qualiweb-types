@@ -1,4 +1,4 @@
-# Quality control application for soft drinks, designed with functional Domain Driven Design
+# Quality control application for soft drinks, designed with functional style Domain Driven Design
 
 <span style="color:#FF0000">Evènements métier</span>
 ![](readme-img/drinks_quality_app_event_storming0.png)
