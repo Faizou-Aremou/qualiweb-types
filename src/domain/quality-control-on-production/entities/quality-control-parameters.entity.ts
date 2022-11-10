@@ -1,5 +1,5 @@
 import { Minute } from "src/utils/minutes.util";
-import { QualityControlPlan } from "./quality-control-plan.entities";
+import { QualityControlPlan } from "../value-objects/quality-control-plan.value.object";
 
 export type QualityControlParameters = {
   readonly id: QualityControlParametersId;

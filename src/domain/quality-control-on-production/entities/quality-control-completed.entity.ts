@@ -1,18 +1,25 @@
-import { QualityControlCharacteristic } from "../value-objects/quality-characteristic.value.object";
-import { QualityControlCardCompleted } from "../value-objects/quality-control.value.object";
+import { ProductTracability } from "../value-objects/product-tracability.value.object";
+import { ProductionStage } from "../value-objects/production-stage.value.object";
+import { CompletedQualityControls } from "./completed-quality-control.entity";
 
-export type QualityControlCompleted = {
-  readonly id: QualityControlCompletedId;
-  readonly qualityControlCriteria: QualityControlCharacteristic;
-  readonly qualityControlCard: QualityControlCardCompleted;
+
+export type CompletedQualityControlPlan = {
+  readonly id: CompletedQualityControlPlanId;
+  readonly productionStage: ProductionStage;
+  readonly qualityControlsCarriedOutAtProductionStage: QualityControlsCarriedOutAtProductionStage;
+  readonly ProductTracability: ProductTracability;
+};
+export type QualityControlsCarriedOutAtProductionStage =
+  ReadonlyArray<CompletedQualityControls>;
+
+export type CompletedQualityControlPlanId = string & {
+  __brand: "CompletedQualityControlPlanId";
 };
 
-export type QualityControlCompletedId = string & {
-  __brand: "QualityControlCompletedId";
-};
-
-export function theQualityControlCompletedId(
+export function theQualityControlPlanId(
   id: string
-): QualityControlCompletedId {
-  return id as QualityControlCompletedId;
+): CompletedQualityControlPlanId {
+  return id as CompletedQualityControlPlanId;
 }
+export type CompletedQualityControlPlans =
+  ReadonlyArray<CompletedQualityControlPlan>;

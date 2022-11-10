@@ -1,5 +1,5 @@
-import { QualityControlPlanCompleted } from "../entities/quality-control-plan.entities";
+import { CompletedQualityControlPlan } from "../value-objects/quality-control-plan.value.object";
 
 export type SampleControlledAtTheProductionStage = {
-  readonly qualityControlPlanCompleted: QualityControlPlanCompleted;
+  readonly qualityControlPlanCompleted: CompletedQualityControlPlan;
 };
