@@ -1,3 +1,4 @@
 
 export type AttributeControlCard = undefined;
-export type CompletedAttributeControlCard = undefined;
+export type AttributeControlCardCompleted = undefined;
+export type AttributeControlCardInProgress = undefined;

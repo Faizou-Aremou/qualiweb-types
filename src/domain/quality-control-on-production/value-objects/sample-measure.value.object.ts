@@ -1,6 +1,11 @@
-export type SampleMeasure = {
+export type SampleMeasureInProgress = {
   readonly date: Date;
-  readonly measures: ReadonlyArray<QualityControlUnits>;
+  readonly measuresInProgress: ReadonlyArray<QualityControlUnits>;
+  readonly average: number;
+};
+export type CompletedSampleMeasure = {
+  readonly date: Date;
+  readonly completedMeasures: ReadonlyArray<QualityControlUnits>;
   readonly average: number;
 };
 
@@ -17,6 +22,11 @@ export function theBrixDegree(degree: number): BrixDegree {
     throw new Error("Degree must be superior to zero");
   }
   return degree as BrixDegree;
+}
+export type Average = number & { __brand: "Average" };
+
+export function theAverage(average: number): Average {
+  return average as Average;
 }
 
 export type CO2Degree = number & { __brand: "CO2Degree" };

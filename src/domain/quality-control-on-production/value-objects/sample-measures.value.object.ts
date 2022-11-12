@@ -1,3 +1,4 @@
-import { SampleMeasure } from "./sample-measure.value.object";
+import { CompletedSampleMeasure, SampleMeasureInProgress } from "./sample-measure.value.object";
 
-export type SampleMeasures = ReadonlyArray<SampleMeasure>;
+export type SampleMeasuresCompleted = ReadonlyArray<CompletedSampleMeasure>;
+export type SampleMeasuresInProgress = ReadonlyArray<SampleMeasureInProgress>;

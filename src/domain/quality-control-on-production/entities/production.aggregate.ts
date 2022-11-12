@@ -1,18 +1,21 @@
 import { OrderManufacturingId } from "./order-manufacturing.aggregate";
-import { CompletedQualityControlPlans } from "./quality-control-completed.entity";
+import {
+  QualityControlPlansAtProductionStage
+} from "./quality-control-plan-at-production-stage.entity";
 
-export type StartedProduction = {
+export type ProductionInProgress = {
   readonly id: ProductionId;
   readonly orderManufacturingId: OrderManufacturingId;
+  readonly QualityControlPlansInProgress: QualityControlPlansAtProductionStage;
 };
 
-export type FinishedProduction = {
+export type ProductionFinished = {
   readonly id: ProductionId;
   readonly orderManufacturingId: OrderManufacturingId;
-  readonly completedQualityControlPlan: CompletedQualityControlPlans;
+  readonly QualityControlPlansCompleted: QualityControlPlansAtProductionStage;
 };
 
-export type Production = StartedProduction | FinishedProduction;
+export type Production = ProductionInProgress | ProductionFinished;
 export type ProductionId = string & { __brand: "ProductionId" };
 
 export function theProductionId(id: string): ProductionId {
