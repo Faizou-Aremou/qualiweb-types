@@ -9,6 +9,8 @@ export type CompletedSampleMeasure = {
   readonly average: number;
 };
 
+export type SampleMeasure = SampleMeasureInProgress | CompletedSampleMeasure;
+export type SampleMeasures = ReadonlyArray<SampleMeasure>;
 export type PhysicalAndChemicalQualityControlUnits = BrixDegree | CO2Degree;
 export type MicrobiologicalQualityControlUnits = undefined;
 export type QualityControlUnits =
