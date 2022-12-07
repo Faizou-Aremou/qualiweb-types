@@ -1,11 +1,11 @@
 {
-    "name": "jarvis-type",
+    "name": "qualiweb-types",
     "version": "1.0.0",
-    "description": "types used for jarvis conception",
-    "main": "index.js",
+    "description": "types used for food controls quality",
+    "main": "index.ts",
     "scripts": {
         "test": "jasmine-ts --config=jasmine.json",
-        "build": "npx webpack --config=webpack.config.js"
+        "build": "webpack --config=webpack.config.js"
     },
     "author": "Faïzou",
     "license": "ISC",
